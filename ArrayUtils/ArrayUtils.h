@@ -33,20 +33,20 @@
 #import <Foundation/Foundation.h>
 
 
-@interface NSArray (ArrayUtils)
+@interface NSArray<__covariant ObjectType> (ArrayUtils)
 
-- (NSArray *)arrayByRemovingObject:(id)object;
-- (NSArray *)arrayByRemovingObjectAtIndex:(NSUInteger)index;
-- (NSArray *)arrayByRemovingLastObject;
-- (NSArray *)arrayByRemovingFirstObject;
-- (NSArray *)arrayByInsertingObject:(id)object atIndex:(NSUInteger)index;
-- (NSArray *)arrayByReplacingObjectAtIndex:(NSUInteger)index withObject:(id)object;
-- (NSArray *)shuffledArray;
-- (NSArray *)mappedArrayUsingBlock:(id (^)(id object))block;
-- (NSArray *)reversedArray;
-- (NSArray *)arrayByMergingObjectsFromArray:(NSArray *)array;
-- (NSArray *)objectsInCommonWithArray:(NSArray *)array;
-- (NSArray *)uniqueObjects;
+- (NSArray<ObjectType> *)arrayByRemovingObject:(ObjectType)object;
+- (NSArray<ObjectType> *)arrayByRemovingObjectAtIndex:(NSUInteger)index;
+- (NSArray<ObjectType> *)arrayByRemovingLastObject;
+- (NSArray<ObjectType> *)arrayByRemovingFirstObject;
+- (NSArray<ObjectType> *)arrayByInsertingObject:(ObjectType)object atIndex:(NSUInteger)index;
+- (NSArray<ObjectType> *)arrayByReplacingObjectAtIndex:(NSUInteger)index withObject:(ObjectType)object;
+- (NSArray<ObjectType> *)shuffledArray;
+- (NSArray *)mappedArrayUsingBlock:(id (^)(ObjectType object))block;
+- (NSArray<ObjectType> *)reversedArray;
+- (NSArray<ObjectType> *)arrayByMergingObjectsFromArray:(NSArray<ObjectType> *)array;
+- (NSArray<ObjectType> *)objectsInCommonWithArray:(NSArray<ObjectType> *)array;
+- (NSArray<ObjectType> *)uniqueObjects;
 
 @end
 
